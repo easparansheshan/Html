@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Hello</title>
+    <meta charset="windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-3">
+        <div class="col5">
+            <input type="text" id="num1" name="array[]" class="form-control" placeholder="Enter Number Here"><br>
+            <input type="text" id="num2" name="array[]" class="form-control" placeholder="Enter Number Here"><br>
+            <input type="text" id="num3" name="array[]" class="form-control" placeholder="Enter Number Here"><br>
+            <input type="text" id="num4" name="array[]" class="form-control" placeholder="Enter Number Here"><br>
+            <input type="text" id="num5" name="array[]" class="form-control" placeholder="Enter Number Here"><br>
+        </div>
+        <div class="text-center">
+            <button class="btn-lg btn-primary text-center" onclick="getBig()">Click To Get Big Number</button>
+        </div>
+        <p class="display-1 mt-3 text-danger text-center" id="para1"></p>
+    </div>
+    <script>
+        var myArr = [];
+       function getBig(){
+            var num1, num2, num3, num4, num5;
+             num1 = document.getElementById('num1').value;
+             num2 = document.getElementById('num2').value;
+             num3 = document.getElementById('num3').value;
+             num4 = document.getElementById('num4').value;
+             num5 = document.getElementById('num5').value;
+
+             myArr.push(num1, num2, num3, num4, num5);
+             var x = Math.max(...myArr);
+             document.getElementById('para1').innerHTML= x;
+       }
+
+            
+
+
+    </script>
+    </body>
+    </html>

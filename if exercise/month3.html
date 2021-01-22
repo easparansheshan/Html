@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="">
+        Enter Month Number:
+        <input type="number" id="num">
+        <button onclick="month()">Click here</button>
+    </div>
+    <script>
+        function month(){
+           var mon = Number(document.getElementById("num").value);
+            var monthNo = ["","January","February","March","April","May","June","July","August","September","October","November","December"];
+            console.log(monthNo[mon])
+        }
+    </script>
+</body>
+</html>

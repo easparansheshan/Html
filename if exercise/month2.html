@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    Enter Number:
+    <input class="form-control" type="number" id="num">
+    <button class="btn btn-primary mt-3" onclick="clicks()">Click here</button>
+    <script>
+        function clicks() {
+            var mon, month,months;
+            months = new Date().getMonth();
+            mon = Number(document.getElementById("num").value);
+
+            switch (mon) {
+                case 1:
+                    month = "January";
+                    break;
+                case 2:
+                    month = "February";
+                    break;
+                case 3:
+                    month = "May";
+                    break;
+                case 4:
+                    month = "April";
+                    break;
+                case 5:
+                    month = "May";
+                    break;
+                case 6:
+                    month = "June";
+                    break;
+                case 7:
+                    month = "July";
+                    break;
+                case 8:
+                    month = "August";
+                    break;
+                case 9:
+                    month = "September";
+                    break;
+                case 10:
+                    month = "October";
+                    break;
+                case 11:
+                    month = "November";
+                    break;
+                case 12:
+                    month = "December";
+                    break;
+            }
+
+            console.log(month, "\n"+"This month is " + months);
+        }
+    </script>
+</body>
+
+</html>

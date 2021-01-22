@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <body>
+        <h2 class="text-center text-primary">Calculate volume of cuboid</h2>
+
+        <div class=form-group>
+            <label for="Height">Enter Height:</label>
+            <input class="form-control" type="text" id="Num1" placeholder="Enter Height in this text box"> <br>
+        </div>
+        <div class=form-group>
+            <label for="width">Enter width:</label>
+            <input class="form-control" type="text" id="Num2" placeholder="Enter Width in this text box"> <br>
+        </div>
+        <div class=form-group>
+            <label for="length">Enter Length:</label>
+            <input class="form-control" type="text" id="Num3" placeholder="Enter Length in this text box"> <br>
+        </div>
+        <button onclick="addition()" class="btn btn-primary mt-3 mb-3">Click to find the Volume</button> <br>
+
+        <textarea class="form-control mt-3" id="textarea" placeholder="Your volume will show in this place"></textarea>
+
+
+        <script>
+            function addition() {
+                var x, y, z, a;
+                x = Number(document.getElementById("Num1").value);
+                y = Number(document.getElementById("Num2").value);
+                a = Number(document.getElementById("Num3").value);
+                z = x * y * a;
+                document.getElementById("textarea").value = z;
+            }
+        </script>
+    </body>
+
+</html>

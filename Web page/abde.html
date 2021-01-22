@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            #menu{
+                text-align: center;
+                
+            }
+            #menu li{
+                display: inline;
+                margin-right: 3px;
+                border-right: 1px solid blue;
+            }
+            #para1{
+                text-align: center;
+                
+            }
+            #para2{
+                text-align: center;
+                background-color: lightblue;
+                margin-right: 400px;
+                margin-left: 400px;
+                border-radius: 10px;
+            }
+            .column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 150px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer{
+    text-align: center;
+    background-color: blue;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+        </style>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <div id="menu">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Form</a></li>
+
+            <li><a href="">Table</a></li>
+</ul>
+    </div>
+<br>
+<div id="para1">
+    <img src="uki.jpeg" alt="uki image"> <br>
+   <br> 
+</div>
+<div id="para2">
+    <p><h3>Welcome to Uki steping stone to Tech life  </h3><br>
+            Uki is a Coding School by Yarl IT Hub, which offers a six <br> months long intensive, in class training program that trains <br>  students to acquire skills needed to join tech companies as <br> interns/ junior developers or become entrepreneurs.
+        </p> <br>
+    </div>
+    <div class="row">
+        <div class="column" style="background-color:#aaa;">
+          <h2>Column 1</h2>
+          <p>Some text..</p>
+        </div>
+        <div class="column" style="background-color:#fff;">
+          
+        </div>
+        <div class="column" style="background-color:#ccc;">
+          <h2>Column 3</h2>
+          <p>Some text..</p>
+        </div>
+      </div>
+    </body>
+    <footer>2019 © Uki. All Rights Reserved. An initiative by Yarl IT Hub.</footer>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /* * {
+            background: url(sunshine.jpeg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        } */
+    </style>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta http-equiv="refresh" content="10">-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="text-center">
+
+
+        <!-- Enter Your Age:<input type="text" id="Num1" class="form-control" placeholder="Enter Your Age">-->
+        <!-- <h2 class="text-danger">Greetings</h2> -->
+        <!-- <button class="btn btn-primary mt-4" onclick="Age()">Click Here Get to Greetings </button> -->
+        <p id="para1" class="pt-3 text-danger display-3">
+        </p>
+    </div>
+    <script>
+        /* var age = 18;
+         if(age > 18){
+             document.getElementById("para1").innerHTML="Eligible for Driving License";
+         }
+         else{
+             document.getElementById("para1").innerHTML="He is not eligible for license";
+         }*/
+        // document.getElementById("para1").innerHTML=new Date().getHours();
+        /* function Greetings() {
+             var messages;
+             if (new Date().getHours() < 12) {
+                 messages = "Good Morning";
+             }
+             else if (new Date().getHours() < 15) {
+                 messages = "Good Afternoon";
+             }
+             else {
+                 messages = "Good evening";
+             }
+             document.getElementById("para1").innerHTML = messages;
+         }*/
+
+        /*function Age(){
+            age=Number(document.getElementById("Num1").value);
+            var messages;
+            if(age < 13){
+                messages="You are Child";
+            }
+            else if(age < 20){
+                messages="You are Teenage";
+            }
+            else if(age <40){
+                messages="You are Adult";
+            }
+            else{
+                messages="You are too old";
+            }
+            document.getElementById("para1").innerHTML= messages;
+        }*/
+        var day;
+        var dayno = new Date().getDay();
+        switch (dayno) {
+            /*  case 0:
+              day = "Sunday";
+              break;
+              case 1:
+              day = "MonDay";
+              break;
+              case 2:
+              day = "TuesDay";
+              break;
+              case 3:
+              day = "WednesDay";
+              break;
+              case 4:
+              day = "ThursDay";
+              break;
+              case 5:
+              day = "FriDay";
+              break;
+              case 6:
+              day = "SatDay";
+              break;*/
+            case 0:
+            case 6:
+                day = "Weekend";
+                break;
+            case 1:
+            case 2:
+            case 3:
+                day = "Normal Day"
+                break;
+
+            case 4:
+            case 5:
+                day = "Weekend coming soon"
+                break;
+
+        }
+
+        document.getElementById("para1").innerHTML = "Today is " + day;
+    </script>
+
+</body>
+
+</html>

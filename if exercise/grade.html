@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="text-center">
+        Enter Your Marks:
+        <input type="number" class="form-control" id="marks" placeholder="ENTER YOUR MARKS" min="0" max="100" required>
+
+        <button onclick="results()" class="btn btn-primary mt-3">Click here to See the results</button>
+    </div>
+    <p id="para1" class="display-1 text-danger text-center"></p>
+    <script>
+        function results() {
+            res = Number(document.getElementById("marks").value);
+            var score;
+            if (res <= 100 && res > 0) {
+                if (res >= 75) {
+                    score = "A";
+                }
+                else if (res >= 60) {
+                    score = "B";
+                }
+                else if (res >= 45) {
+                    score = "C";
+                }
+                else if ( res < 45) {
+                    score = "F";
+                } 
+            }else {
+                score = "You Enter Wrong Input";
+            }
+            document.getElementById("para1").innerHTML = "Your results is " + score;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+    <div class="text-center">
+        Enter Number:
+        <input type="number" id="Num1" class="form-control">
+        <button onclick="color()" class="btn btn-primary mt-3">Click</button>
+    </div>
+    <p id="para1" class="text-center display-3 mt-3 text-danger"></p>
+    <script>
+        function color(){
+            col = Number(document.getElementById("Num1").value);
+            var out;
+            if( 0 <= col, col <= 10){
+                out = "Blue";
+            }
+            else if( 10 <= col, col < 20){
+                out = "Red";
+            }
+            else if(20 <= col, col < 30 ){
+                out = "Green";
+            }
+            else{
+                out = "It is not a correct colour option";
+            }
+            document.getElementById("para1").innerHTML= "Your results is "+ out;
+        }
+    </script>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="text-center">
+        Enter Number:
+        <input type="number" class="form-control" id="Num1">
+        <button onclick="month()" class="btn btn-primary mt-3">Click To See month in console</button>
+    </div>
+    <script>
+        function month() {
+            var monthNo, x, name;
+            x = Number(document.getElementById("Num1").value);
+
+            if (x == 1) {
+                name = "January";
+            }else if (x == 2) {
+                name = "Feb";
+            }else if (x == 3) {
+                name = "Mar";
+            }else if (x == 4) {
+                name = "Apr";
+            }else if (x == 5) {
+                name = "May";
+            }else if (x == 6) {
+                name = "Jun";
+            }else if (x ==7) {
+                name = "Jul";
+            }else if (x == 8) {
+                name = "Aug";
+            }else if (x == 9) {
+                name = "Sep";
+            }else if (x == 10) {
+                name = "Oct";
+            }else if (x == 11) {
+                name = "Nov";
+            }else  if (x == 12){
+                name = "Dec";
+            
+            }    else{
+                name ="Wrong Input"
+            }
+            console.log(name);
+        }
+        
+        
+    </script>
+</body>
+
+</html>

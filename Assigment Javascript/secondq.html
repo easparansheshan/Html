@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class=form-group>
+        <label for="First Number">Enter First Number</label>
+        <input class="form-control" type="text" id="Num1" placeholder="Enter First Number"> <br>
+    </div>
+    <div class=form-group>
+        <label for="Second Number">Enter Second Number</label>
+        <input class="form-control" type="text" id="Num2" placeholder="Enter Second Number"> <br>
+    </div>
+    <button onclick="addition()" class="btn btn-primary mt-3 mb-3">Click to find all arithmetic operations</button> <br>
+
+    <textarea class="form-control mt-3" id="textarea" rows="4"
+        placeholder="Your answers will show in this place"></textarea>
+
+
+    <script>
+        function addition() {
+            var x, y, z, a, b, c, d;
+            x = Number(document.getElementById("Num1").value);
+            y = Number(document.getElementById("Num2").value);
+            z = x + y;
+            a = x * y;
+            c = x - y;
+            d = x / y;
+            document.getElementById("textarea").value = "The addition of the two numbers is " + z + "\n" + "The Multiplication of the two numbers is " + a + "\n" + "The subtraction of the two numbers is " + c + "\n" + "The division of the two numbers is " + d;
+
+        }
+    </script>
+</body>
+
+</html>

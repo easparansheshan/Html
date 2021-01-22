@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="text-left d-block">
+            Enter First Number:
+            <input type="number" id="num1" name="array[]" class="form-control " placeholder="Enter Number Here">
+            Enter Second Number:
+            <input type="number" id="num2" name="array[]" class="form-control" placeholder="Enter Number Here">
+            Enter Third Number:
+            <input type="number" id="num3" name="array[]" class="form-control" placeholder="Enter Number Here">
+            Enter Fourth Number:
+            <input type="number" id="num4" name="array[]" class="form-control" placeholder="Enter Number Here">
+            Enter Fivth Number:
+            <input type="number" id="num5" name="array[]" class="form-control" placeholder="Enter Number Here">
+            <button class="btn btn-primary mt-3" onclick="bigNumber()">Click here to find the <span
+                    class="font-weight-bold text-dark ">Biggest</span>
+                Number</button>
+        </div>
+        <p id="para1" class="text-center bg-dark text-danger display-1"></p>
+    </div>
+    <script>
+        var x ==="";
+            console.log(typeof x);
+        function bigNumber() {
+            var a, b, d, x, y, z;
+            /*x = Number(document.getElementById("num1").value);
+            y = Number(document.getElementById("num2").value);
+            z = Number(document.getElementById("num3").value);
+            a = Number(document.getElementById("num4").value);
+            b = Number(document.getElementById("num5").value);*/
+            //Math.max(x, y, z, a, b);
+            
+            let sheshan = document.getElementById('array[]');
+            sheshan.sort();
+            return sheshan;
+
+
+            //  let c = [x, y, z, a, b];
+            /*if (x > y && x > z && x > a && x > b) {
+                c = x;
+            } else if (y > x && y > z && y > a && y > b) {
+                c = y;
+            } else if (z > x && z > y && z > a && z > b) {
+                c = z;
+            } else if (a > x && a > y && a > z && a > b) {
+                c = a;
+            } else {
+                c = b;
+            }*/
+            /* c.sort();
+             return c;
+             alert(c[5]);*/
+            document.getElementById("para1").innerHTML = sheshan;
+            x=="";
+            console.log(typeof x);
+        }
+       // alert(c(4));
+
+    </script>
+</body>
+
+</html>

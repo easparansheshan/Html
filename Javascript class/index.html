@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>JavaScript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>JavaScript Tutorial</h1>
+    <p id="Hi"></p>
+
+    <script>
+        /*window.alert("Hello I'm Sheshan");
+        /*document.getElementById("Hi").innerHTML="Hello world";
+        document.getElementById("Hi").innerHTML=5+6;
+        document.write("Hello Uki");*/
+        // console.log(5+10);*/
+
+        /* var x,y,z,a;
+         x="5";
+         y=6;
+         a=2;
+         z=x+a+y;
+         document.getElementById("Hi").innerHTML=z+5;*/
+
+        /*function Total(num1, num2,num3)
+       {
+            var sum= num1 + num2 + num3 , avg=sum/3;
+            return ["The sum is " +sum,  "The average is " +avg];
+        
+            
+        }
+        document.getElementById("Hi").innerHTML= Total(5,4,3)  ;*/
+        /*function Total(num1, num2, num3){
+            var sum = num1 + num2 + num3;
+            //Get Average and Total
+            var average = sum / 3;
+           // return [sum,average];
+           return "The sum is " + sum + " ,The average is " + average;
+        }
+        document.getElementById("Hi").innerHTML=Total(5,10,5);*/
+
+        // Find area of circle
+        /* function circle(radius){
+             var area = 2*3.14*radius;
+             var cir = 3.14*radius*radius;
+             return "The area of the circle is "+ area  + "<br>"+" The circumference of circle is "+ cir;
+         }
+         document.getElementById("Hi").innerHTML=circle(5)*/
+        var sheshan = { name: "Sheshan", age: 21, place: "batticaloa" };
+        //document.getElementById("Hi").innerHTML=sheshan.name +"   "+ sheshan.age;
+        var car = {
+            name: "Toyota",
+            model: "BMW",
+            color: "red",
+            price: "100laks",
+            modelnames: function () {
+                return this.name + " " + this.model;
+            }
+        }
+        //document.getElementById("Hi").innerHTML= "The car model name is "+car.model+" color is"+car.color+ " price is"+car.price;
+        document.getElementById("Hi").innerHTML = "Full name is " + car.modelnames();
+        //document.getElementById("Hi").innerHTML = "The car model name is " + car["model"] + " color is" + car["color"] + " price is" + car["price"];
+    </script>
+</body>
+
+</html>

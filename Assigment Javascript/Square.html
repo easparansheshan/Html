@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <p class="text-center">
+        ENTER NUMBER: <input class="form-control" id="Num1" placeholder="Enter Number here"><br>
+        <button onclick="mul()" class="btn btn-primary mt-3 mb-3">Click to find the Square Number</button> <br>
+        SQUARE NUMER:
+        <textarea class="form-control mt-3" id="square" placeholder="Your answer is"></textarea>
+    </p>
+    <script>
+        function mul(){
+            var x,y;
+            x = Number(document.getElementById("Num1").value);
+            y = x*x;
+            document.getElementById("square").value = y;
+        }
+    </script>
+</body>
+
+</html>
