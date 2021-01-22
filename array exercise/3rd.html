@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Add values in array</h2>
+    <p id="index3"></p>
+<script>
+    var fruits = ["Apple","Banana"];
+    fruits.splice(1, 0, 'Blackberries','Blueberries','Apricots','Avocado','Breadfruit');
+    fruits.sort();
+    fruits.reverse();
+    document.getElementById('index3').innerHTML= fruits[3];
+</script>
+</body>
+</html>
